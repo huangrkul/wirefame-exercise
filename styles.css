@@ -103,8 +103,14 @@ section > div > div:hover {
 }
 
 section > div:nth-child(2) > p {
+  font-style: italic;
   height: 301px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+section > div:nth-child(2) > p::-webkit-scrollbar {
+  display:none;
 }
 
 footer {
