@@ -1,6 +1,7 @@
-* {
+/* * {
   outline: 1px dotted orange;
-}
+} */
+
 nav, main > div:nth-child(2), main section {
   margin-right: auto;
   margin-left: auto;
@@ -21,9 +22,12 @@ nav, main > div:nth-child(2), main section {
 header, footer {
   width: 100%;
   background-color: #666666;
-  margin-bottom: 30px;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+header {
+  margin-bottom: 30px;
 }
 
 header ul, header ul li {
@@ -53,6 +57,7 @@ main > div:nth-child(2) > img:nth-child(2) {
 
 section {
   text-align: left;
+  margin-bottom: 30px;
 }
 
 section > div:first-child, section > div:nth-child(2) {
@@ -81,4 +86,21 @@ section > div > div {
   border: 2px solid #222222;
   border-radius: 10px;
   margin-top: 1em;
+  transition: all 350ms ease-in-out;
+}
+
+section > div > div:hover {
+  cursor: pointer;
+  background-color: #999999;
+  color: black;
+  border: 2px solid #999999;
+}
+
+section > div:nth-child(2) > p {
+  height: 301px;
+  overflow: scroll;
+}
+
+footer {
+  height: 200px;
 }
