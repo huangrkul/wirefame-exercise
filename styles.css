@@ -37,6 +37,12 @@ header ul, header ul li {
 
 header ul li {
   margin-left: 5.4em;
+  transition: all 350ms ease-in-out;
+}
+
+header ul li:hover {
+  color: white;
+  cursor: pointer;
 }
 
 header img {
