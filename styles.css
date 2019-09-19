@@ -1,9 +1,21 @@
 * {
   outline: 1px dotted orange;
 }
-nav, main div:nth-child(2) {
+nav, main > div:nth-child(2), main section {
   margin-right: auto;
   margin-left: auto;
+}
+
+main div:first-child, main > div:nth-child(2)  {
+  margin-bottom: 30px;
+}
+
+main, main > div:nth-child(2), section > div > div {
+  text-align: center;
+}
+
+nav, main > div:nth-child(2), main section {
+  width: 960px;
 }
 
 header, footer {
@@ -27,20 +39,46 @@ header img {
   vertical-align: middle;
 }
 
-nav {
-  width: 960px;
-}
-
 main {
   width: 100%;
-  text-align: center;
 }
 
-main div:first-child {
-  margin-bottom: 30px;
+main > div:nth-child(2) > img:first-child, section > div:first-child {
+  float: left;
 }
 
-main div:nth-child(2) {
-  width: 960px;
+main > div:nth-child(2) > img:nth-child(2) {
+  float: right;
+}
+
+section {
   text-align: left;
+}
+
+section > div:first-child, section > div:nth-child(2) {
+  display: inline-block;
+}
+
+section > div:first-child {
+  margin-right: 30px;
+}
+
+section > div:nth-child(2) {
+  width: 450px;
+  height: 400px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+section > div > div {
+  width: 120px;
+  background-color: #222222;
+  color: white;
+  padding: 0.5em;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  margin-top: 1em;
 }
